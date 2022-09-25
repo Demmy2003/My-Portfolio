@@ -1,0 +1,183 @@
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  h {
+    font-size: 22px;
+  }
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  padding: 1.3vw;
+}
+
+p {
+  font-size: 18px;
+}
+
+header {
+  text-align: center;
+  background-color: rgba(150, 228, 255, 1);
+  padding: 2vw;
+  border-radius: 25px;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+nav {
+  text-align: center;
+  background-color: white;
+  padding: 0;
+  font-size: 21px;
+  border: 1px rgba(150, 228, 255, 1);
+  border-radius: 15px;
+}
+
+ul.begin {
+  display: flex;
+  list-style-position: inside;
+  letter-spacing: 0.1vw;
+  text-align: center;
+  font-size: 1.2vw;
+  list-style: none;
+}
+
+li.begin {
+  margin: 1vw;
+  text-align: center;
+}
+
+a {
+  color: rgba(150, 228, 255, 1);
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+a:hover {
+  text-decoration: underline;
+  font-style: oblique;
+}
+
+section.ik {
+  background-color: rgb(170, 128, 255);
+  padding: 1vw;
+  border-radius: 20px;
+}
+
+h2 {
+  padding: 0.8vw;
+  font-size: 33px;
+  color: rgb(170, 128, 255);
+  border-radius: 15px;
+}
+
+img.games {
+  float: right;
+  width: 15vw;
+  height: 9vw;
+  padding: 0, 5vw;
+}
+
+.hobbie {
+  margin-right: 47vw;
+}
+
+h2.hobby {
+  color: rgb(255, 153, 255);
+}
+
+section.hobby {
+  background-color: rgb(255, 153, 255);
+  padding: 1vw;
+  border-radius: 25px;
+}
+
+section.leren {
+  background-color: rgba(150, 228, 255, 1);
+  padding: 1vw;
+  border-radius: 25px;
+
+}
+
+h3 {
+  padding: 0.8vw;
+  font-size: 33px;
+  border-radius: 15px;
+  color: rgba(150, 228, 255, 1);
+}
+
+section.beach {
+  background-color:rgb(170, 128, 255);
+  padding: 1vw;
+  border-radius: 25px;
+}
+
+img.hond {
+  width: 14vw;
+  height: 14vw;
+  float: left;
+  padding: 1vw;
+}
+
+h4 {
+  font-size: 33px;
+  padding: 0.8vw;
+  color:rgb(170, 128, 255);
+  border-radius: 15px;
+}
+
+h4.beach {
+  padding: 0.8vw;
+}
+
+section.media {
+  background-color: rgba(150, 228, 255, 1);
+  padding: 1vw;
+  border-radius: 25px;
+}
+
+p.media {
+  margin-right: 58vw;
+}
+
+h4.media {
+  background-color: white;
+  color: rgba(150, 228, 255, 1);
+}
+
+.socialMedia {
+  border: 1px solid black;
+}
+
+td {
+  background-color: rgb(4000, 170, 5800);
+}
+
+td.rij {
+  background-color: rgb(500000, 200, 65000);
+  color: purple;
+}
+
+table {
+  width: 55vw;
+  table-layout: auto;
+  overflow: auto;
+  border-collapse: collapse;
+  float: right;
+  margin-right: 1vw;
+  font-size: 18px;
+}
+
+th {
+  background-color: rgb(4000, 130, 5800);
+  color: purple;
+}
+
+th.rij {
+  background-color: rgb(4000, 160, 5800);
+}
