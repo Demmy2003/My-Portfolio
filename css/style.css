@@ -850,12 +850,13 @@ section.beach {
   border-radius: 25px;
   padding-right: 1vw;
   margin-top: 3%;
+  display: flex;
 }
 
 img.hond {
   float: right;
-  width: 12vw;
-  height: auto;
+  width: 20vw;
+  height: fit-content;
   margin: 1vw;
   margin-right: 1vw;
 }
@@ -1242,7 +1243,7 @@ button.send-form:hover {
   /* ---------- Voor de aboutpagina aka about.html ---------- */
 
 
-  div.beach {
+  section.beach {
     flex-direction: column;
   }
 
@@ -1271,7 +1272,7 @@ button.send-form:hover {
 
   img.hond {
     width: 50%;
-    height: 50%;
+    height: auto;
     margin-top: 0;
   }
 
