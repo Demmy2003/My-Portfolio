@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/eb84ecf582.js" crossorigin="anonymous"></script>
+    <title>My Portfolio</title>
+</head>
+
+
+<body>
+    
+    <nav>
+        <section class="begin">
+            <p class="begin">Demmy's Portfolio</p>
+            <button class="opennav mobile" onclick="mobileNav()"><i class="fa fa-bars"></i></button>
+        </section>
+        <section class="navbar" id="navbar">
+            <div class="one nav">
+                <a class="begin" href="./index.html">Home</a>
+            </div>
+            <div class="two nav">
+                <a class="begin" href="./about.html">About</a>
+            </div>
+            <div class="three nav">
+                <a class="begin" href="./skills.html">Skills</a>
+            </div>
+            <div class="four nav">
+                <a class="begin" href="./contact.html">Contact</a>
+            </div>
+        </section>
+    </nav>
+    <script>
+        function mobileNav() {
+            var x = document.getElementById("navbar");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+    <button class="openchat" onclick="openChat()"><i class='fas fa-comments'></i></button>
+    <chat id="chatbox">
+        <form class="chatbox" action="/sent_to.php">
+            <p class="chatbox"> Chat </p>
+            <label for="chatmessage">Message</label>
+            <textarea placeholder="Typ hier uw bericht.. (werkt nog niet)" name="chatmessage"></textarea>
+        </form>
+        <section class="chatbuttons">
+            <button class="sendchat">Send</button>
+            <button class="closechat" onclick="closeChat()">Close Chat</i></button>
+        </section>
+    </chat>
+    <script>
+        function openChat() {
+            document.getElementById("chatbox").style.display = "block";
+
+        }
+        function closeChat() {
+            document.getElementById("chatbox").style.display = "none";
+
+        }
+    </script>
+    <main>
+        <section class="contact">
+            <h4>Contact</h4>
+            <p>Nu heeft u de gehele website gezien. Voor eventuele vragen / feedback e.d.
+                staat hier nog een contactformulier.
+            </p>
+            <article class="contact">
+                <form class="contact" action="https://docent.cmi.hr.nl/moora/frontend/send-mail.php" method="post">
+                    <section class="formtop">
+
+                        <div class="name">
+                            <div class="rij-1">
+                                <label for="name">Naam *</label>
+                            </div>
+                            <div class="rij-2">
+                                <input type="text" id="name" name="name" placeholder="Name" required>
+                            </div>
+                        </div>
+
+                        <div class="city">
+                            <div class="rij-1">
+                                <label for="city">Woonplaats</label>
+                            </div>
+                            <div class="rij-2">
+                                <input type="text" id="city" name="city" placeholder="City">
+                            </div>
+                        </div>
+
+                        <div class="email">
+                            <div class="rij-1">
+                                <label for="email">E-mail *</label>
+                            </div>
+                            <div class="rij-2">
+                                <input type="email" id="email" name="email" placeholder="name@gmail.com" required>
+                            </div>
+                        </div>
+
+                        <div class="gender">
+                            <div class="rij-1">
+                                <label for="gender">Geslacht *</label>
+                            </div>
+                            <div class="rij-2">
+                                <select name="gender" id="gender" required>
+                                    <option value="male">Man</option>
+                                    <option value="female">Vrouw</option>
+                                    <option value="none">Anders</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="date">
+                            <div class="rij-1">
+                                <label for="date">Datum *</label>
+                            </div>
+                            <div class="rij-2">
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                        </div>
+
+                        <div class="category">
+                            <div class="rij-1">
+                                <label for="category">Ik stuur een bericht over *</label>
+                            </div>
+                            <div class="rij-2">
+                                <select name="category" id="category" required>
+                                    <option value="een">kies een onderwerp</option>
+                                    <option value="twee">Feedback</option>
+                                    <option value="drie">Vragen</option>
+                                    <option value="vier">Fouten in de website</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="question">
+                            <div class="rij-1">
+                                <label for="question">Het bericht *</label>
+                            </div>
+                            <div class="rij-2">
+                                <textarea id="question" name="question" placeholder="Typ hier uw bericht"
+                                    required></textarea>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="voorwaarden">
+                        <label for="voorwaarden">Ik ga akkoord met de voorwaarden *</label>
+                        <input type="radio" id="voorwaarden" name="voorwaarden" required>
+                    </div>
+                    <button class="send-form" type="submit" action="./contact-bedankt.html">Versturen</button>
+                </form>
+            </article>
+        </section>
+    </main>
+        <footer>
+            <p class="footer">Bedankt voor uw bezoek aan mijn website</p>
+            <p class="footer">Volg mij op social media <a class="footer"
+                    href="https://www.instagram.com/db.0sr/">Instagram</a> en
+                <a class="footer" href="https://www.facebook.com/profile.php?id=100008161296310">FaceBook</a>
+            </p>
+        </footer>
+</body>
+
+</html>
