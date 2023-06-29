@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/eb84ecf582.js" crossorigin="anonymous"></script>
     <title>My Portfolio</title>
 </head>
@@ -18,7 +18,7 @@
         </section>
         <section class="navbar" id="navbar">
             <div class="one nav">
-                <a class="begin" href="./index.html">Home</a>
+                <a class="begin" href="index.html">Home</a>
             </div>
             <div class="two nav">
                 <a class="begin" href="./about.html">About</a>
@@ -33,7 +33,7 @@
     </nav>
     <script>
         function mobileNav() {
-            var x = document.getElementById("navbar");
+            const x = document.getElementById("navbar");
             if (x.style.display === "block") {
                 x.style.display = "none";
             } else {
@@ -50,7 +50,7 @@
         </form>
         <section class="chatbuttons">
             <button class="sendchat">Send</button>
-            <button class="closechat" onclick="closeChat()">Close Chat</i></button>
+            <button class="closechat" onclick="closeChat()">Close Chat</button>
         </section>
     </chat>
     <script>
@@ -68,35 +68,133 @@
     </header>
     <main>
         <section class="codes">
-            <h3 class="codes"> Code talen</h3>
-            <p>Bij deze de codetalen die ik tot nu toe heb geleerd. Inclusief een foto van mijn zelfgemaakte codes.</p>
+            <h3 class="codes"> programmeer talen</h3>
+            <p>Bij deze de programmeertalen die ik tot nu toe heb geleerd. Inclusief een foto van mijn zelfgemaakte codes.</p>
             <section class="code-layout">
                 <section class="codepic">
-                    <img class="skills" src="img/carebotJavaScript.png" alt="JavaScript code">
-                    <div class="skill-text">JavaScript</div>
+                    <img class="skills" src="./img/JavaScript.png" alt="JavaScript code">
+                    <div class="skill-text">
+                        <p class="skill-text">JavaScript</p>
+                    </div>
                 </section>
 
                 <section class="codepic">
-                    <img class="skills" src="img/HTML.png" alt="HTML code">
-                    <div class="skill-text">HTML</div>
+                    <img class="skills" src="./img/HTML.png" alt="HTML code">
+                    <div class="skill-text">
+                        <p class="skill-text">HTML</p>
+                    </div>
+                </section>
+
+
+            </section>
+            <section class="code-layout">
+                <section class="codepic">
+                    <img class="skills" src="./img/CSS.png" alt="CSS code">
+                    <div class="skill-text">
+                        <p class="skill-text">CSS</p>
+                    </div>
                 </section>
 
                 <section class="codepic">
-                    <img class="skills" src="img/CSS.png" alt="CSS code">
-                    <div class="skill-text">CSS</div>
+                    <img class="skills" src="./img/php.png" alt="CSS code">
+                    <div class="skill-text">
+                        <p class="skill-text">PHP en MySQL</p>
+                    </div>
                 </section>
             </section>
         </section>
 
         <section class="project">
             <h3 class="project">Projecten</h3>
-            <p>Ook ben ik bezig met het maken van projecten. Tot nu toe nog maar een afgerond.
+            <p>Ook ben ik bezig met het maken van projecten.
                 Alle komende projecten zullen ook hier weergeven worden.
             </p>
             <section class="project-layout">
                 <section class="codepic">
-                    <img class="skills" src="img/carebot.jpg" alt="Pillen robot">
-                    <div class="skill-text">Pillen robot</div>
+                    <img class="skills" src="./img/cle4.png" alt="Fantasy Achiever Game">
+                    <div class="skill-text">
+                        <p class="skill-text">Fantasy Achiever game in Hefpark Rotterdam</p>
+                        <p>Ik heb met een groepje van 4 een game gemaakt. De opdracht was:
+                        Een fantasy game voor achiever gamers in locatie Hefpark Rotterdam.
+                        De game bestaat uit 4 levels, waarvan de eerste 3 levels, platform-levels zijn en het vierde level is een boss fight</p>
+                        <p>Mijn taken:</p>
+                        <ul class="skill-text">
+                            <li>Interview met Achiever gamers over hun voorkeuren</li>
+                            <li>Interview met de beheerder van Hefpark over het park</li>
+                            <li>Aanmaken van verschillende scenes en de overgang naar de juiste scenes</li>
+                            <li>Victory en Fail schermen gemaakt voor elk level</li>
+                            <li>Cutscenes met animaties gemaakt tussen de levels in waar een verhaal in staat</li>
+                            <li>Heel level 2 ingericht met platforms, enemies en flowers</li>
+                            <li>Zorgen dat je naar fail gaat als je dood gaat en naar victory gaat als je aan de
+                            voorwaarden voldoet</li>
+                            <li>Animaties toevoegen wanneer enemies dood gaan</li>
+                            <li>Maken van sociale media pagina's voor feedback en delen van scores</li>
+                            <li>Groepsleden helpen met bugs</li>
+
+                        </ul>
+                        <p>De game is af. Het enige dat niet werkt is het scoreboard. Misschien werken we verder
+                        aan deze game als de spelers dat graag willen.</p>
+                        <a href="https://flurry19.github.io/CLE4-Game/">Link naar de game</a>
+                    </div>
+                </section>
+
+                <section class="codepic">
+                    <img class="skills" src="./img/cle3.png" alt="Sport App voor senioren">
+                    <div class="skill-text">
+                        <p class="skill-text">Sport app voor senioren</p>
+                        <p>Een app speciaal gemaakt voor senioren om ze te helpen met sporten.
+                        De app bestaat uit een informatiepagina, pagina met sportlocaties, pagina met sportoefeningen en
+                        een pagina om wandel- en fietstrainingen te volgen.</p>
+                        <p>Mijn taken:</p>
+                        <ul class="skill-text">
+                            <li>Pagina voor wandel- en fiets trainingsschema's</li>
+                            <li>Interviews houden met senioren over hun voorkeuren m.b.t websites of apps</li>
+                            <li>Onderzoek doen naar gezonde wandel- en fietstrainingsschema's, speciaal voor senioren</li>
+                            <li>De opmaak van de app, de CSS oftewel alle kleurtjes, lettertypes, afbeeldingen etc.</li>
+                        </ul>
+                        <p>Dit systeem was een groepsopdracht en gezien we gebruik hebben gemaakt van databases en het
+                        geld kost om deze online te zetten, gaan we niet meer verder met dit project.</p>
+                    </div>
+                </section>
+                <section class="codepic">
+                    <img class="skills" src="./img/cle2.png" alt="Reserveringssysyteem">
+                    <div class="skill-text">
+                        <p class="skill-text">Reservering systeem Rondvaart Delft</p>
+                        <p>Dit is een reserveringsysteem die ik heb gemaakt. Het systeem moet hun huidige reserveringsysteem
+                            verbeteren en nu moet het makkelijker in gebruik zijn. Het systeem is gemaakt voor alle leeftijden zowel
+                            jong als oud. Daarnaast wordt het door 30+ werknemers gebruikt waardoor het een heel duidelijk systeem moet zijn.</p>
+                        <p>Mijn taken:</p>
+                        <ul class="skill-text">
+                            <li>Letterlijk alles, ik heb het in mijn eentje gedaan</li>
+                            <li>Ontwerp klanten bookingspage op basis van hun huidige website (eigenaarskant was ontworpen door opdrachtgever)</li>
+                            <li>Contact met opdrachtgever over wensen en eisen</li>
+                            <li>Maken van databases, inlogpaginas, registreerpagina's, pages voor het aanmaken van
+                                reserveringen, pages voor opvragen van reserveringen per dag en tijdstip</li>
+                        </ul>
+                        <p>Het systeem is nog in onderhoud, het begon als schoolproject maar is nu een serieus project
+                            geworden waar ik uiteindelijk geld mee verdien.</p>
+                    </div>
+                </section>
+            </section>
+            <section class="project-layout">
+                <section class="codepic">
+                    <img class="skills" src="./img/carebot.jpg" alt="Pillen robot">
+                    <div class="skill-text">
+                        <p class="skill-text">Pillen robot</p>
+                        <p>Dit is een robot waar je je medicijnen voor 7 dagen in de week in kan doen.
+                            De robot heeft aan de rechter zijkant touchpad knopjes om de robot te laten werken.
+                            Wanneer je op het knopje klikt om je pillen van de dag te krijgen, draait het rad
+                            van het roze doosje, aan de onderkant vallen je medicijnen er uit. Tegelijkertijd wordt
+                            er automatisch een glaasje water voor je ingeschonken om de pillen mee in te nemen.
+                            Ook is er een extra buisje waar paracetamol uit komt.</p>
+                        <p>Mijn taken:</p>
+                        <ul class="skill-text">
+                            <li>Maken van de kraan incl. bekerhouder (zwarte blok rechts)</li>
+                            <li>Programmeren dat de kraan automatisch af gaat</li>
+                            <li>Programmeren dat er een geluidje piept als er geen beker in de bekerhouder zit</li>
+                            <li>Maken en programmeren van extra buisje dat paracetamol geeft als je een van de touchpads aanraakt</li>
+                        </ul>
+                    </div>
                 </section>
             </section>
         </section>

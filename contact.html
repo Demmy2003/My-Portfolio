@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/eb84ecf582.js" crossorigin="anonymous"></script>
     <title>My Portfolio</title>
 </head>
@@ -20,13 +20,13 @@
         </section>
         <section class="navbar" id="navbar">
             <div class="one nav">
-                <a class="begin" href="./index.html">Home</a>
+                <a class="begin" href="index.html">Home</a>
             </div>
             <div class="two nav">
                 <a class="begin" href="./about.html">About</a>
             </div>
             <div class="three nav">
-                <a class="begin" href="./skills.html">Skills</a>
+                <a class="begin" href="skills.html">Skills</a>
             </div>
             <div class="four nav">
                 <a class="begin" href="./contact.html">Contact</a>
@@ -35,7 +35,7 @@
     </nav>
     <script>
         function mobileNav() {
-            var x = document.getElementById("navbar");
+            const x = document.getElementById("navbar");
             if (x.style.display === "block") {
                 x.style.display = "none";
             } else {
@@ -52,7 +52,7 @@
         </form>
         <section class="chatbuttons">
             <button class="sendchat">Send</button>
-            <button class="closechat" onclick="closeChat()">Close Chat</i></button>
+            <button class="closechat" onclick="closeChat()">Close Chat</button>
         </section>
     </chat>
     <script>
@@ -69,7 +69,8 @@
         <section class="contact">
             <h4>Contact</h4>
             <p>Nu heeft u de gehele website gezien. Voor eventuele vragen / feedback e.d.
-                staat hier nog een contactformulier.
+                staat hier nog een contactformulier. (het formulier werkt nog niet.
+                Voor vragen stuur een mailtje naar demmybrands@gmail.com of bel mij op 06-43671233)
             </p>
             <article class="contact">
                 <form class="contact" action="https://docent.cmi.hr.nl/moora/frontend/send-mail.php" method="post">
